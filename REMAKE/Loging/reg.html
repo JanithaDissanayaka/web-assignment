@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Register</title>
+            <link rel="stylesheet" href="style.css">
+            <script src="scriptReg.js"></script>
+    </head>
+        <body class="body2">
+            <div class="box">
+                <div class="container1">
+                    <div class="row">
+                        <div class="col">
+                            <h1>Create Account</h1>
+                        </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <form action="connReg.php" method="post"  name="regForm" enctype="multipart/form-data" onsubmit="return validateForm(event)">
+                                <div class="sign-inline">
+                                    <div class="login-group">
+                                        <label for="fname">First Name : </label>
+                                        <div class="input-field">
+                                            <input type="text" id="fname" name="fname">
+                                        </div>
+                                    </div>
+                                    <div class="login-group">
+                                        <label for="lname"></label>Last Name : </label><br><br>
+                                        <div class="input-field">
+                                            <input type="text" id="lname" name="lname">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="login-group">
+                                    <label for="email">E-mail : </label>
+                                    <div class="input-field">
+                                        <input type="text" id="email" name="email">
+                                    </div>
+                                </div>
+                                
+                                <div class="radio-group">
+                                    <label for="gender">Gender : </label>
+                                    <input type="radio" name="gender" value="male" id="male">
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="gender" value="female" id="female">
+                                    <label for="female" >Female</label>
+                                </div>
+                                
+                                
+                               
+                                <div class="login-group">
+                                    <label for="password">Password : </label>
+                                    <div class="input-field">
+                                        <input type="password" id="password" name="password">
+                                    </div>
+                                </div>
+                                <div class="login-group">
+                                    <label for="retypepassword">Retype Password</label>
+                                    <div class="input-field">
+                                        <input type="password" id="retypepassword" name="retypepassword">
+                                    </div>
+                                </div>
+                                <div class="check">
+                                    
+                                        <input type="checkbox" id="terms" name="terms">
+                                        <span>I agree to the Terms and Conditions</span>
+                                    
+                                </div>
+                                <div class="login-group">
+                                    <div class="button-group">
+                                        <input type="submit" value="REGISTER" class="submit">
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>    
+                    </div>
+                </div>
+            </div>
+        </body>
+    </head>
+</html>
